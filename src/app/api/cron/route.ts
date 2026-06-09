@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { getDb, type Alert } from '@/lib/db'
-import { searchFlights } from '@/lib/amadeus'
+import { searchFlights } from '@/lib/flights'
 import { sendTelegramMessage, formatFlightAlert } from '@/lib/telegram'
 
 const CRON_SECRET = process.env.CRON_SECRET || ''
